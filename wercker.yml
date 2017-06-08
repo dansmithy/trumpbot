@@ -28,7 +28,7 @@ build:
         cmd: /trumpbot
         tag: $WERCKER_GIT_COMMIT
         repository: dansmithy/trumpbot
-        registry: https://registry.hub.docker.com/v2
+        registry: https://registry.hub.docker.com
 
 deploy:
   box: google/golang
