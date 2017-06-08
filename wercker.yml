@@ -29,7 +29,6 @@ build:
         tag: $WERCKER_GIT_COMMIT
         repository: dansmithy/trumpbot
         registry: https://registry.hub.docker.com
-    - internal/store-container
 
 
 deploy:
