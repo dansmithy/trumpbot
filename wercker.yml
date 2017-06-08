@@ -22,7 +22,6 @@ build:
         name: go build
         code: |
           CGO_ENABLED=0 GOOS=linux go build -a -o trumpbot ./...
-    - internal/store-container
     - internal/docker-scratch-push:
         username: $DOCKERHUB_USERNAME
         password: $DOCKERHUB_PASSWORD
@@ -30,6 +29,8 @@ build:
         tag: $WERCKER_GIT_COMMIT
         repository: dansmithy/trumpbot
         registry: https://registry.hub.docker.com
+    - internal/store-container
+
 
 deploy:
   box: google/golang
