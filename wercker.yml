@@ -46,7 +46,7 @@ deploy:
         certificate-authority: ca.pem
         client-certificate: client.pem
         client-key: client-key.pem
-        command: set image deployment/trumpbox trumpbot=dansmithy/trumpbot:$WERCKER_GIT_COMMIT
+        command: set image deployment/trumpbot trumpbot=dansmithy/trumpbot:$WERCKER_GIT_COMMIT
     - script:
         name: Cleanup
         code: rm -rf ca.pem client.pem client-key.pem
