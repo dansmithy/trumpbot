@@ -18,7 +18,7 @@ func getResponseString() string {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "%s\n", getResponseString())
+	fmt.Fprintf(w, "Trump says: %s\n", getResponseString())
 }
 
 func main() {
