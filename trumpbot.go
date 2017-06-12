@@ -12,6 +12,7 @@ func getResponseString() string {
 		"This is the single greatest witch hunt of a politician in American history!",
 		"James Comey better hope that there are no 'tapes' of our conversations before he starts leaking to the press!",
 		"The Russia-Trump collusion story is a total hoax, when will this taxpayer funder charade end?",
+		"President Obama 'is the worst president in U.S. history!'",
 	}
 	return responses[rand.Intn(len(responses))]
 }
