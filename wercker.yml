@@ -18,11 +18,11 @@ build:
         name: go test
         code: |
           go test ./...
+    - internal/store-container
     - script:
         name: go build
         code: |
           CGO_ENABLED=0 GOOS=linux go build -a -o trumpbot ./...
-    - internal/store-container
     - internal/docker-scratch-push:
         username: $DOCKERHUB_USERNAME
         password: $DOCKERHUB_PASSWORD
