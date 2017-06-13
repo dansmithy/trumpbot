@@ -18,7 +18,6 @@ build:
         name: go test
         code: |
           go test ./...
-    - internal/store-container
     - script:
         name: go build
         code: |
